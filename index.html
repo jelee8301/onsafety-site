@@ -1038,8 +1038,15 @@ const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwpgxdw82NXxv
 
 // 유입경로(UTM) 자동 수집 — 어느 채널(전단/DM/카카오/검색)에서 온 신청인지 시트에 함께 기록됩니다.
 const utmParams = (() => {
+  const keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+  let saved = {};
+  try{ saved = JSON.parse(sessionStorage.getItem('onsafety_utm') || '{}'); }catch(_){}
   const q = new URLSearchParams(location.search);
-  return ['utm_source','utm_medium','utm_campaign'].map(k => q.get(k)).filter(Boolean).join('/') || '직접유입';
+  let found = false;
+  keys.forEach(k => { const v = q.get(k); if(v){ saved[k] = v; found = true; } });
+  if(q.get('gclid')){ saved.gclid = 'gclid'; found = true; }
+  if(found){ try{ sessionStorage.setItem('onsafety_utm', JSON.stringify(saved)); }catch(_){} }
+  return keys.map(k => saved[k]).filter(Boolean).join('/') + (saved.gclid ? '/gclid' : '') || '직접유입';
 })();
 
 document.getElementById('leadForm').addEventListener('submit', async function(e){
