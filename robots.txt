@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onsafety.co.kr/sitemap.xml
