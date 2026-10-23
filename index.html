@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://onsafety.co.kr/">
+<script>if(location.hostname==="www.onsafety.co.kr"){location.replace("https://onsafety.co.kr"+location.pathname+location.search+location.hash);}</script>
+<title>위험성평가, 이제 남에게 맡기지 마세요 | 온세이프티</title>
+<meta name="description" content="고용노동부 A등급 안전보건교육 전문기관 온세이프티. 위험성평가 실습 교육을 정부지원 환급과정으로 비용 부담은 덜고, 강사가 회사로 찾아가 위험성평가를 함께 완성합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --orange:#F45B00;
+  --orange-deep:#C94A00;
+  --amber:#FFB100;
+  --ink:#211B15;
+  --ink2:#2E2620;
+  --body:#4A423B;
+  --warm:#FFF4EC;
+  --paper:#FFFFFF;
+  --line:#EBE2DA;
+  --ok:#1B7F4E;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Noto Sans KR',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;}
+img{max-width:100%;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px;}
+.stripe{height:8px;background:repeating-linear-gradient(135deg,var(--ink) 0 14px,var(--orange) 14px 28px);}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--orange);text-transform:uppercase;}
+.eyebrow::before{content:"";width:22px;height:3px;background:var(--orange);}
+section{padding:72px 0;}
+h2{font-size:clamp(26px,4vw,36px);font-weight:900;letter-spacing:-.02em;line-height:1.3;margin:10px 0 14px;}
+.lead{font-size:clamp(16px,2vw,19px);color:var(--body);max-width:640px;}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px;}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;}}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.brand{display:flex;align-items:baseline;gap:10px;}
+.brand .logo{font-size:20px;font-weight:900;letter-spacing:.02em;}
+.brand .logo span{color:var(--orange);}
+.brand .tag{font-size:12px;font-weight:700;color:var(--body);}
+.topbar .actions{display:flex;align-items:center;gap:14px;}
+.topbar .tel{font-weight:900;font-size:18px;color:var(--ink);}
+.topbar .tel small{font-weight:600;font-size:12px;color:var(--body);margin-right:6px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:800;border-radius:10px;cursor:pointer;border:0;transition:transform .15s ease,background .15s ease;}
+.btn:hover{transform:translateY(-1px);}
+.btn-primary{background:var(--orange);color:#fff;padding:12px 22px;font-size:16px;}
+.btn-primary:hover{background:var(--orange-deep);}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5);padding:11px 20px;font-size:16px;}
+.btn-ghost:hover{border-color:#fff;}
+.btn-lg{padding:16px 30px;font-size:18px;border-radius:12px;}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:84px 0 76px;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;right:-140px;top:-140px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(244,91,0,.28),transparent 65%);}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;}
+.hero .eyebrow{color:var(--amber);}
+.hero .eyebrow::before{background:var(--amber);}
+.hero h1{font-size:clamp(34px,5.4vw,56px);font-weight:900;line-height:1.22;letter-spacing:-.02em;margin:16px 0 18px;}
+.hero h1 .hl{background:linear-gradient(transparent 58%,var(--orange) 58%);}
+.hero .sub{font-size:clamp(16px,2vw,19px);color:#D9CFC6;max-width:520px;}
+.hero .sub b{color:var(--amber);}
+.hero .cta-row{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
+.pricecard{background:var(--ink2);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:30px 28px;position:relative;}
+.pricecard .plabel{font-size:14px;color:#B7AA9E;font-weight:600;}
+.pricecard .old{font-size:19px;color:#8B7E72;text-decoration:line-through;text-decoration-color:var(--orange);text-decoration-thickness:3px;margin-top:8px;}
+.pricecard .new{font-size:58px;font-weight:900;color:var(--amber);line-height:1.1;letter-spacing:-.01em;font-variant-numeric:tabular-nums;}
+.pricecard .new small{font-size:24px;color:#fff;font-weight:800;}
+.pricecard .pnote{font-size:12.5px;color:#B7AA9E;margin-top:12px;line-height:1.55;}
+.stamp{position:absolute;top:-26px;right:-14px;width:112px;height:112px;border-radius:50%;background:var(--orange);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(9deg);box-shadow:0 10px 26px rgba(244,91,0,.4);text-align:center;}
+.stamp b{font-size:15px;font-weight:900;line-height:1.25;}
+.stamp span{font-size:10.5px;font-weight:700;opacity:.9;margin-top:2px;}
+.only-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(244,91,0,.14);border:1px solid rgba(244,91,0,.5);color:#fff;border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:700;margin-bottom:18px;}
+.only-badge i{font-style:normal;background:var(--orange);color:#fff;font-size:11px;font-weight:900;border-radius:999px;padding:2px 9px;}
+
+/* qualify */
+.qualify{background:var(--paper);}
+.qgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;}
+.qcard{border:1.5px solid var(--line);border-radius:14px;padding:22px 20px;background:#fff;}
+.qcard .qnum{font-size:12px;font-weight:900;color:var(--orange);letter-spacing:.08em;}
+.qcard h3{font-size:17px;font-weight:800;margin:8px 0 6px;line-height:1.4;}
+.qcard p{font-size:14px;color:var(--body);line-height:1.55;}
+.fineprint{font-size:13px;color:#8B7E72;margin-top:18px;}
+
+/* problem */
+.problem{background:var(--ink);color:#fff;}
+.problem .lead{color:#D9CFC6;}
+.problem .lead b{color:var(--amber);}
+.checkgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px;}
+.checkcard{display:flex;gap:14px;align-items:flex-start;background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px 22px;}
+.checkcard .cbox{min-width:30px;height:30px;border-radius:8px;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:16px;}
+.checkcard p{font-size:15.5px;font-weight:600;line-height:1.5;}
+.problem .turn{margin-top:34px;font-size:clamp(18px,2.6vw,24px);font-weight:900;}
+.problem .turn span{color:var(--amber);}
+
+/* deliverables */
+.deliver{background:var(--warm);}
+.dgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px;}
+.dcard{background:#fff;border-radius:16px;padding:26px;border:1.5px solid #F6E3D5;display:flex;flex-direction:column;gap:8px;}
+.dcard .dval{font-size:13px;font-weight:900;color:var(--orange);}
+.dcard h3{font-size:19px;font-weight:900;line-height:1.35;}
+.dcard p{font-size:14.5px;color:var(--body);}
+
+/* calculator */
+.calc{background:var(--paper);}
+.calcbox{margin-top:34px;border:2px solid var(--ink);border-radius:20px;overflow:hidden;}
+.calcbox .chead{background:var(--ink);color:#fff;padding:18px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.calcbox .chead h3{font-size:18px;font-weight:900;}
+.calcbox .chead span{font-size:13px;color:#B7AA9E;}
+.calcbody{padding:30px 28px;display:grid;grid-template-columns:1fr 1.2fr;gap:36px;align-items:center;}
+.calcbody .nsel label{font-size:14px;font-weight:700;color:var(--body);}
+.calcbody .nval{font-size:52px;font-weight:900;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.1;margin:6px 0 14px;}
+.calcbody .nval small{font-size:20px;font-weight:800;}
+input[type=range]{width:100%;accent-color:var(--orange);height:6px;cursor:pointer;}
+.calcout{display:grid;gap:10px;}
+.crow{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px dashed var(--line);padding-bottom:10px;}
+.crow .cl{font-size:14.5px;font-weight:600;color:var(--body);}
+.crow .cv{font-size:20px;font-weight:800;font-variant-numeric:tabular-nums;}
+.crow.total .cl{color:var(--ink);font-weight:900;font-size:16px;}
+.crow.total .cv{font-size:32px;font-weight:900;color:var(--orange);}
+.crow.save{border-bottom:0;}
+.crow.save .cv{color:var(--ok);}
+.calcnote{padding:0 28px 24px;font-size:12.5px;color:#8B7E72;line-height:1.6;}
+
+/* modes */
+.modes{background:var(--warm);}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px;}
+.mcard{background:#fff;border-radius:18px;overflow:hidden;border:1.5px solid #F6E3D5;}
+.mcard.rec{border:2.5px solid var(--orange);position:relative;}
+.mhead{padding:18px 24px;background:var(--ink);color:#fff;display:flex;justify-content:space-between;align-items:center;}
+.mcard.rec .mhead{background:var(--orange);}
+.mhead h3{font-size:19px;font-weight:900;}
+.mhead .mb{background:#fff;color:var(--orange);font-size:12px;font-weight:900;border-radius:999px;padding:3px 12px;}
+.mcard ul{list-style:none;padding:22px 24px 10px;}
+.mcard li{position:relative;padding-left:26px;margin-bottom:12px;font-size:15.5px;line-height:1.5;}
+.mcard li::before{content:"✓";position:absolute;left:0;top:0;color:var(--orange);font-weight:900;}
+.mcard .who{margin:6px 24px 22px;background:var(--warm);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--body);}
+.mcard .who b{color:var(--ink);}
+
+/* why only */
+.why{background:var(--ink);color:#fff;position:relative;}
+.why .lead{color:#D9CFC6;}
+.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:38px 0;}
+.stat{background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:22px;text-align:center;}
+.stat .sv{font-size:clamp(24px,3vw,34px);font-weight:900;color:var(--amber);font-variant-numeric:tabular-nums;}
+.stat .sl{font-size:13px;color:#B7AA9E;font-weight:600;margin-top:4px;}
+.onlybox{border:2px solid var(--orange);border-radius:18px;padding:30px;background:rgba(244,91,0,.08);}
+.onlybox h3{font-size:clamp(19px,2.6vw,24px);font-weight:900;line-height:1.4;}
+.onlybox h3 span{color:var(--amber);}
+.onlybox p{margin-top:12px;color:#D9CFC6;font-size:15.5px;max-width:760px;}
+.onlybox .src{display:block;margin-top:14px;font-size:12px;color:#8B7E72;}
+
+/* process */
+.process{background:var(--paper);}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;}
+.step{border:1.5px solid var(--line);border-radius:14px;padding:22px;position:relative;}
+.step .sn{font-size:12px;font-weight:900;color:var(--orange);letter-spacing:.1em;}
+.step h3{font-size:17px;font-weight:900;margin:8px 0 6px;}
+.step p{font-size:14px;color:var(--body);line-height:1.55;}
+.notice{margin-top:26px;background:var(--warm);border:1.5px solid #F6E3D5;border-radius:14px;padding:20px 24px;font-size:13.5px;color:var(--body);line-height:1.7;}
+.notice b{color:var(--ink);}
+
+/* faq */
+.faq{background:var(--warm);}
+details{background:#fff;border:1.5px solid #F6E3D5;border-radius:14px;margin-top:12px;overflow:hidden;}
+summary{cursor:pointer;padding:20px 24px;font-size:16.5px;font-weight:800;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"+";font-size:24px;font-weight:400;color:var(--orange);transition:transform .2s;}
+details[open] summary::after{transform:rotate(45deg);}
+details .ans{padding:0 24px 22px;font-size:15px;color:var(--body);line-height:1.7;}
+details .ans b{color:var(--ink);}
+
+/* form */
+.apply{background:var(--ink);color:#fff;}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px;}
+.field{display:flex;flex-direction:column;gap:8px;}
+.field.full{grid-column:1/-1;}
+.field label{font-size:14px;font-weight:700;color:#D9CFC6;}
+.field input,.field select{background:var(--ink2);border:1.5px solid rgba(255,255,255,.16);border-radius:10px;padding:14px 16px;color:#fff;font-size:16px;font-family:inherit;}
+.field input::placeholder{color:#8B7E72;}
+.field input:focus,.field select:focus{border-color:var(--orange);outline:none;}
+.consent{grid-column:1/-1;font-size:13px;color:#B7AA9E;display:flex;gap:10px;align-items:flex-start;}
+.consent input{accent-color:var(--orange);margin-top:3px;}
+.apply .btn-lg{grid-column:1/-1;width:100%;}
+.success{display:none;grid-column:1/-1;background:rgba(27,127,78,.15);border:1.5px solid var(--ok);border-radius:12px;padding:20px;font-size:15px;line-height:1.6;}
+.success.show{display:block;}
+.altcta{margin-top:22px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;font-size:15px;color:#D9CFC6;}
+.altcta b{color:var(--amber);font-size:19px;}
+
+/* dual chips (hero) */
+.dualchips{display:flex;align-items:center;gap:10px;margin-top:20px;flex-wrap:wrap;}
+.chip{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:8px 18px;font-size:14.5px;font-weight:800;}
+.chip-ai{background:rgba(244,91,0,.25);border-color:var(--orange);color:#FFD9BD;}
+.plus{color:var(--amber);font-size:20px;font-weight:900;}
+.dual-note{font-size:13px;font-weight:700;color:#B7AA9E;margin-left:2px;}
+/* ai callout */
+.aibox{margin-top:18px;background:var(--ink);color:#fff;border-radius:16px;padding:26px 28px;display:flex;gap:22px;align-items:flex-start;position:relative;overflow:hidden;}
+.aibox::after{content:"AI";position:absolute;right:-10px;bottom:-34px;font-size:120px;font-weight:900;color:rgba(244,91,0,.12);letter-spacing:-4px;}
+.ai-badge{background:var(--orange);color:#fff;font-size:12.5px;font-weight:900;border-radius:999px;padding:6px 14px;white-space:nowrap;position:relative;z-index:1;}
+.ai-body{position:relative;z-index:1;}
+.ai-body h3{font-size:clamp(17px,2.4vw,21px);font-weight:900;line-height:1.4;}
+.ai-body h3 span{color:var(--amber);}
+.ai-body p{margin-top:8px;font-size:14.5px;color:#D9CFC6;line-height:1.7;max-width:760px;}
+.ai-body p b{color:#fff;}
+@media (max-width:860px){.aibox{flex-direction:column;gap:12px;}}
+/* story */
+.story{background:var(--paper);}
+.storygrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px;}
+.scene{border-radius:16px;padding:26px;line-height:1.7;font-size:15.5px;}
+.scene p b{color:var(--ink);}
+.scene.bad{background:#F4F1EE;border:1.5px solid var(--line);color:#6B6259;}
+.scene.good{background:var(--warm);border:2px solid var(--orange);color:var(--body);}
+.stag{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:5px 14px;margin-bottom:14px;}
+.scene.bad .stag{background:#DDD6CF;color:#6B6259;}
+.scene.good .stag{background:var(--orange);color:#fff;}
+.scene.good p b{color:var(--orange-deep,#B03E00);}
+.storyline{margin-top:26px;text-align:center;font-size:16px;color:var(--body);line-height:1.8;}
+.storyline b{color:var(--ink);}
+.storyline span{display:inline-block;margin-top:8px;font-size:clamp(17px,2.4vw,21px);font-weight:900;color:var(--ink);background:linear-gradient(transparent 62%,rgba(244,91,0,.35) 62%);}
+@media (max-width:860px){.storygrid{grid-template-columns:1fr;}}
+/* reviews */
+.reviews{background:var(--warm);}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;}
+.rcard{background:#fff;border:1.5px solid #F6E3D5;border-radius:16px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;}
+.rquote{font-size:15px;line-height:1.75;color:var(--body);}
+.rquote::before{content:"\201C";display:block;font-size:40px;font-weight:900;color:var(--orange);line-height:.6;margin-bottom:10px;}
+.rwho{font-size:13px;font-weight:800;color:var(--orange-deep,#B03E00);border-top:1px dashed var(--line);padding-top:12px;}
+@media (max-width:860px){.rgrid{grid-template-columns:1fr;}}
+/* urgency strip */
+.urgency{background:var(--ink);color:#fff;text-align:center;padding:12px 20px;font-size:15px;font-weight:700;}
+.urgency b{color:var(--amber);}
+/* deliver 3-col */
+.dgrid.three{grid-template-columns:repeat(3,1fr);}
+@media (max-width:860px){.dgrid.three{grid-template-columns:1fr;}}
+/* deadline chip */
+.deadline{display:inline-block;background:rgba(244,91,0,.22);border:1px solid rgba(255,179,126,.5);border-radius:999px;font-size:13.5px;font-weight:700;color:#FFD9BD;padding:7px 18px;margin-top:16px;}
+/* instagram */
+.ig-sec{background:var(--paper);padding:0 0 72px;}
+.igcard{display:flex;align-items:center;gap:26px;flex-wrap:wrap;background:var(--warm);border:1.5px solid #F6E3D5;border-radius:20px;padding:28px 30px;}
+.igicon{flex:0 0 68px;height:68px;border-radius:19px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);}
+.igicon svg{width:36px;height:36px;fill:none;stroke:#fff;stroke-width:2;}
+.igbody{flex:1 1 300px;}
+.igbody .eyebrow{font-size:12.5px;text-transform:none;}
+.igbody h3{font-size:clamp(19px,2.6vw,24px);font-weight:900;line-height:1.35;margin:6px 0 4px;}
+.igbody p{font-size:14.5px;color:var(--body);}
+.igbtn{flex:0 0 auto;display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;font-weight:800;font-size:16px;padding:15px 26px;border-radius:12px;transition:background .15s,transform .15s;}
+.igbtn:hover{background:var(--orange);transform:translateY(-1px);}
+@media (max-width:860px){.igcard{padding:22px 20px;}.igbtn{width:100%;justify-content:center;}}
+/* footer */
+footer{background:#17120E;color:#B7AA9E;padding:36px 0;font-size:13px;line-height:1.8;}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;}
+footer .fbrand{font-size:16px;font-weight:900;color:#fff;}
+footer .fbrand span{color:var(--orange);}
+
+
+/* ===== motion & new sections ===== */
+.sbar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--orange),var(--amber));z-index:120;}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s);}
+.rv.l{transform:translateX(-40px);} .rv.r{transform:translateX(40px);} .rv.z{transform:scale(.93) translateY(16px);}
+.rv.in{opacity:1;transform:none;}
+.dcard.rv.in:hover,.qcard.rv.in:hover,.rcard.rv.in:hover,.duty.rv.in:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(244,91,0,.14);transition:transform .25s,box-shadow .25s;transition-delay:0s;}
+.dcard .small{font-size:13px;color:var(--body);}
+.fineprint a{color:inherit;}
+
+/* hero motion */
+.hero .fx{position:absolute;inset:0;pointer-events:none;z-index:0;}
+.hero .fx svg{position:absolute;width:44px;height:44px;fill:none;stroke:var(--amber);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.22;animation:floaty 9s ease-in-out infinite;}
+.hero .fx .f1{left:6%;top:16%;} .hero .fx .f2{left:46%;top:8%;width:56px;height:56px;animation-delay:-2s;} .hero .fx .f3{right:7%;bottom:12%;animation-delay:-4s;} .hero .fx .f4{left:38%;bottom:9%;width:36px;height:36px;animation-delay:-6s;} .hero .fx .f5{right:36%;top:14%;width:38px;height:38px;animation-delay:-3s;}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(0);}50%{transform:translateY(-22px) rotate(8deg);}}
+.hero::after{animation:glow 6s ease-in-out infinite;}
+@keyframes glow{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.18);opacity:.75;}}
+.hero h1 .hl{background:linear-gradient(var(--orange),var(--orange)) no-repeat 0 92%/0% 42%;animation:sweep 1s .5s ease forwards;}
+@keyframes sweep{to{background-size:100% 42%;}}
+.hero .eyebrow,.hero .only-badge,.hero h1,.hero .sub,.hero .dualchips,.hero .cta-row,.hero .pricecard{animation:up .8s cubic-bezier(.2,.7,.2,1) both;}
+.hero .only-badge{animation-delay:.1s;} .hero h1{animation-delay:.2s;} .hero .sub{animation-delay:.35s;} .hero .dualchips{animation-delay:.5s;} .hero .cta-row{animation-delay:.65s;} .hero .pricecard{animation-delay:.4s;}
+@keyframes up{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:none;}}
+.stamp{animation:pop .9s .9s cubic-bezier(.3,1.6,.5,1) both;}
+@keyframes pop{from{transform:scale(0) rotate(-40deg);opacity:0;}to{transform:rotate(9deg);opacity:1;}}
+.pricecard .old{position:relative;text-decoration:none;}
+.pricecard .old::after{content:"";position:absolute;left:0;top:55%;height:3px;width:0;background:var(--orange);animation:strike .6s 1.9s ease forwards;}
+@keyframes strike{to{width:100%;}}
+.btn-primary.btn-lg{animation:pulseb 2.6s 2.5s infinite;}
+@keyframes pulseb{0%,100%{box-shadow:0 0 0 0 rgba(244,91,0,.5);}60%{box-shadow:0 0 0 14px rgba(244,91,0,0);}}
+
+/* urgency ticker */
+.urgency{padding:0;overflow:hidden;}
+.urgency .tick{display:flex;width:max-content;animation:tick 42s linear infinite;}
+.urgency .tick:hover{animation-play-state:paused;}
+.urgency .trk{display:flex;align-items:center;gap:26px;padding:13px 13px;white-space:nowrap;font-size:15px;font-weight:700;}
+.urgency .trk i{font-style:normal;color:var(--orange);font-size:9px;}
+@keyframes tick{to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion:reduce){.urgency .tick{width:auto;flex-wrap:wrap;justify-content:center;}.urgency .trk{white-space:normal;flex-wrap:wrap;justify-content:center;}.urgency .trk.dup{display:none;}}
+
+/* legal */
+.legal{background:var(--warm);}
+.legal .subh{font-size:20px;font-weight:900;margin:46px 0 16px;letter-spacing:-.01em;}
+.tl{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-top:34px;}
+.tl-track{position:absolute;left:6%;right:6%;top:46px;height:4px;background:#EFD9C8;border-radius:4px;}
+.tl-fill{height:100%;width:0;background:linear-gradient(90deg,var(--orange),var(--amber));border-radius:4px;transition:width 2.6s cubic-bezier(.4,.1,.2,1) .2s;}
+.tl.in .tl-fill{width:100%;}
+.tn{position:relative;background:#fff;border:1.5px solid #F2DCCB;border-radius:16px;padding:44px 20px 22px;opacity:0;transform:translateY(20px) scale(.96);transition:opacity .6s var(--d,0s),transform .6s var(--d,0s);}
+.tl.in .tn{opacity:1;transform:none;}
+.tn .dot{position:absolute;left:50%;top:-17px;width:24px;height:24px;margin-left:-12px;border-radius:50%;background:var(--orange);border:5px solid var(--warm);box-shadow:0 0 0 3px var(--orange);}
+.tl.in .tn .dot{animation:ping 2.2s var(--d,0s) 2;}
+@keyframes ping{0%{box-shadow:0 0 0 3px var(--orange),0 0 0 3px rgba(244,91,0,.5);}100%{box-shadow:0 0 0 3px var(--orange),0 0 0 22px rgba(244,91,0,0);}}
+.tn .date{font-size:22px;font-weight:900;color:var(--orange);font-variant-numeric:tabular-nums;}
+.tn h4{font-size:17px;font-weight:900;margin:4px 0 6px;}
+.tn p{font-size:14px;color:var(--body);line-height:1.6;}
+.dutygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.duty{background:#fff;border:1.5px solid #F2DCCB;border-radius:16px;padding:22px 20px;}
+.duty.wide{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;column-gap:20px;align-items:start;}
+.duty.wide h4{grid-column:2;} .duty.wide p{grid-column:2;} .duty.wide .dno{grid-row:1/3;}
+.dno{font-size:30px;font-weight:900;color:var(--orange);font-variant-numeric:tabular-nums;line-height:1;}
+.duty h4{font-size:17px;font-weight:900;margin:10px 0 6px;}
+.duty p{font-size:14px;color:var(--body);line-height:1.65;}
+.duty em{display:block;margin-top:8px;font-style:normal;font-size:12.5px;font-weight:800;color:var(--orange-deep);}
+.duty.wide em{display:inline;}
+.fines{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.fine{background:#fff;border:1.5px solid #F2DCCB;border-radius:16px;padding:22px 20px;}
+.fname{font-size:15px;font-weight:900;line-height:1.45;min-height:44px;margin-bottom:12px;}
+.frow{display:grid;grid-template-columns:34px 1fr 74px;align-items:center;gap:10px;margin-top:10px;font-size:13px;}
+.frow span{font-weight:800;color:var(--body);} .frow b{text-align:right;font-variant-numeric:tabular-nums;font-size:14px;}
+.fbar{height:12px;background:#F7EADF;border-radius:999px;overflow:hidden;}
+.fbar i{display:block;height:100%;width:0;border-radius:999px;background:var(--amber);transition:width 1.2s cubic-bezier(.2,.7,.2,1) var(--d,0s);}
+.fbar i.top{background:var(--orange);}
+.fines.in .fbar i{width:var(--w);}
+.legal .notice{margin-top:18px;background:#fff;}
+.legal .notice a{text-decoration:underline;text-underline-offset:3px;}
+.srcs{margin-top:8px;font-size:12.5px;color:#8B7E72;line-height:1.7;}
+.lead2{margin:42px 0 14px;font-size:20px;font-weight:900;}
+.legal .checkcard{background:#fff;border:1.5px solid #F2DCCB;}
+.legal .checkcard p{color:var(--ink);}
+.legal .turn{color:var(--ink);}
+.legal .turn span{color:var(--orange);}
+.legal .checkgrid{margin-top:0;}
+.legal .turn{margin-top:28px;}
+
+/* limit */
+.limit{background:var(--ink);color:#fff;}
+.limit .lead{color:#D9CFC6;}
+.lsteps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;padding-top:26px;}
+.lline{position:absolute;left:8%;right:8%;top:51px;height:3px;background:rgba(255,255,255,.12);}
+.lfill{height:100%;width:0;background:linear-gradient(90deg,var(--orange),var(--amber));transition:width 2.4s ease .3s;}
+.lsteps.in .lfill{width:100%;}
+.lstep{position:relative;background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:40px 22px 22px;}
+.lno{position:absolute;left:22px;top:-26px;width:52px;height:52px;border-radius:50%;background:var(--orange);color:#fff;font-weight:900;font-size:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px var(--ink);}
+.lstep h3{font-size:18px;font-weight:900;margin-bottom:8px;}
+.lstep p{font-size:14px;color:#D9CFC6;line-height:1.65;}
+.lbtn{display:inline-block;margin-top:14px;font-size:14px;font-weight:800;color:var(--amber);border-bottom:2px solid currentColor;}
+.lbtn:hover{color:#fff;}
+.sim{margin-top:34px;background:var(--ink2);border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;}
+.simhead{padding:18px 26px;background:#2B221B;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;}
+.simhead h3{font-size:18px;font-weight:900;} .simhead span{font-size:13px;color:#B7AA9E;}
+.simbody{display:grid;grid-template-columns:1fr 1.15fr;gap:34px;padding:28px 26px;align-items:center;}
+.simin .sl{display:block;font-size:14px;font-weight:700;color:#D9CFC6;margin:18px 0 8px;}
+.simin .sl:first-child{margin-top:0;}
+.simin .sl b{color:#fff;font-size:18px;}
+.limrow{display:flex;align-items:center;gap:10px;}
+.limrow input{width:100%;background:#17120E;border:1.5px solid rgba(255,255,255,.18);border-radius:10px;padding:14px 16px;color:#fff;font-size:22px;font-weight:800;font-family:inherit;font-variant-numeric:tabular-nums;}
+.limrow input:focus{outline:none;border-color:var(--orange);}
+.limrow .unit{font-weight:800;color:#D9CFC6;white-space:nowrap;}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
+.chips button{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.25);color:#fff;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s,border-color .15s;}
+.chips button:hover{background:var(--orange);border-color:var(--orange);}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.seg input{position:absolute;opacity:0;pointer-events:none;}
+.seg span{display:block;text-align:center;padding:12px 8px;border-radius:10px;border:1.5px solid rgba(255,255,255,.2);font-size:14px;font-weight:700;color:#D9CFC6;cursor:pointer;transition:all .15s;}
+.seg input:checked + span{background:var(--orange);border-color:var(--orange);color:#fff;}
+.seg input:focus-visible + span{outline:3px solid var(--amber);outline-offset:2px;}
+.simout{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center;}
+.gauge{width:150px;height:150px;}
+.gbg{fill:none;stroke:rgba(255,255,255,.1);stroke-width:12;}
+.gfg{fill:none;stroke:var(--orange);stroke-width:12;stroke-linecap:round;transition:stroke-dashoffset 1.1s cubic-bezier(.2,.7,.2,1),stroke .3s;}
+.gfg.over{stroke:#FF5A4D;}
+.gv{fill:#fff;font-size:26px;font-weight:900;text-anchor:middle;font-variant-numeric:tabular-nums;}
+.gl{fill:#B7AA9E;font-size:11px;font-weight:700;text-anchor:middle;}
+.srow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-bottom:1px dashed rgba(255,255,255,.14);padding:8px 0;font-size:14px;color:#D9CFC6;}
+.srow b{color:#fff;font-size:17px;font-variant-numeric:tabular-nums;} .srow b.or{color:var(--amber);font-size:20px;}
+.verdict{margin-top:12px;padding:12px 14px;border-radius:10px;font-size:14px;font-weight:700;line-height:1.55;background:rgba(255,255,255,.07);}
+.verdict.ok{background:rgba(27,127,78,.22);color:#BFEBD3;} .verdict.over{background:rgba(255,90,77,.18);color:#FFC9C4;}
+.simnote{padding:0 26px 22px;font-size:12.5px;color:#8B7E72;line-height:1.7;}
+
+@media (max-width:860px){
+  .tl{grid-template-columns:1fr;gap:34px;padding-top:6px;padding-left:22px;}
+  .tl-track{left:11px;right:auto;top:0;bottom:0;width:4px;height:auto;}
+  .tl-fill{width:100%!important;height:0;transition:height 2.6s ease .2s;} .tl.in .tl-fill{height:100%;}
+  .tn{padding:20px;} .tn .dot{left:-22px;top:24px;margin-left:0;}
+  .dutygrid,.fines{grid-template-columns:1fr;} .duty.wide{display:block;}
+  .lsteps{grid-template-columns:1fr;gap:40px;} .lline{display:none;}
+  .simbody{grid-template-columns:1fr;gap:26px;padding:22px 18px;} .simout{grid-template-columns:1fr;justify-items:center;}
+  .sres{width:100%;} .simnote{padding:0 18px 20px;}
+  .hero .fx svg{opacity:.14;}
+}
+
+
+.kicker{display:table;font-size:14px;font-weight:800;color:var(--amber);letter-spacing:.02em;margin:14px 0 8px;padding-left:12px;border-left:3px solid var(--orange);}
+.warmcard .wlist{list-style:none;margin:16px 0 4px;padding:0;display:grid;gap:16px;}
+.warmcard .wlist li{display:flex;gap:14px;align-items:flex-start;}
+.warmcard .wlist i{flex:0 0 34px;height:34px;border-radius:50%;background:var(--orange);color:#fff;font-style:normal;font-weight:900;display:flex;align-items:center;justify-content:center;}
+.warmcard .wlist b{display:block;font-size:17px;font-weight:800;color:#fff;}
+.warmcard .wlist span{display:block;font-size:13.5px;color:#B7AA9E;margin-top:2px;line-height:1.5;}
+.warmcard .wlist li{animation:up .7s both;} .warmcard .wlist li:nth-child(2){animation-delay:.7s;} .warmcard .wlist li:nth-child(3){animation-delay:1s;} .warmcard .wlist li:nth-child(1){animation-delay:.45s;}
+
+.faculty{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:28px 32px;margin-bottom:22px;}
+.fnum{text-align:center;min-width:170px;padding-right:30px;border-right:1px solid rgba(255,255,255,.12);}
+.fnum span{font-size:clamp(54px,8vw,76px);font-weight:900;color:var(--amber);line-height:1;font-variant-numeric:tabular-nums;}
+.fnum em{font-style:normal;font-size:26px;font-weight:900;color:var(--amber);}
+.fnum small{display:block;margin-top:8px;font-size:13.5px;color:#B7AA9E;font-weight:700;}
+.fbody h3{font-size:clamp(18px,2.4vw,23px);font-weight:900;line-height:1.45;}
+.fbody h3 span{color:var(--amber);}
+.fbody p{margin-top:8px;color:#D9CFC6;font-size:15px;}
+.fchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.fchips span{border:1.5px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:700;color:#fff;background:rgba(255,255,255,.06);opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s;}
+.faculty.in .fchips span{opacity:1;transform:none;}
+.faculty.in .fchips span:nth-child(1){transition-delay:.3s}.faculty.in .fchips span:nth-child(2){transition-delay:.45s}.faculty.in .fchips span:nth-child(3){transition-delay:.6s}.faculty.in .fchips span:nth-child(4){transition-delay:.75s}.faculty.in .fchips span:nth-child(5){transition-delay:.9s}
+@media (max-width:860px){.faculty{grid-template-columns:1fr;padding:24px 20px;gap:18px}.fnum{border-right:0;border-bottom:1px solid rgba(255,255,255,.12);padding:0 0 16px;}}
+
+/* flow override */
+.deliver{background:var(--paper);} .process{background:var(--warm);} .faq{background:var(--paper);}
+.ig-sec{padding:56px 0 72px;}
+.smallbiz{display:flex;gap:18px;align-items:flex-start;margin-top:22px;padding:22px 24px;border-radius:16px;background:#fff;border:1.5px solid var(--orange);}
+.smallbiz .sb-ico{font-size:30px;line-height:1;}
+.smallbiz h4{font-size:18px;font-weight:900;margin-bottom:6px;}
+.smallbiz p{font-size:15px;color:var(--body);line-height:1.7;}
+@media(max-width:860px){.smallbiz{flex-direction:column;gap:10px}}
+.hero h1{font-size:clamp(20px,2.4vw,31px);line-height:1.4;word-break:keep-all;}
+@media(max-width:480px){.hero h1{font-size:20px;}}
+.hero .sub{word-break:keep-all;}
+/* mobile */
+.mobilebar{display:none;}
+@media (max-width:860px){
+  section{padding:56px 0;}
+  .hero .wrap{grid-template-columns:1fr;gap:36px;}
+  .qgrid{grid-template-columns:1fr 1fr;}
+  .checkgrid,.dgrid,.mgrid,.formgrid{grid-template-columns:1fr;}
+  .calcbody{grid-template-columns:1fr;gap:24px;}
+  .statrow{grid-template-columns:1fr 1fr;}
+  .steps{grid-template-columns:1fr 1fr;}
+  .topbar .tel{display:none;}
+  .stamp{top:-20px;right:6px;width:96px;height:96px;}
+  .mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;}
+  .mobilebar a{flex:1;text-align:center;padding:16px 0;font-size:16px;font-weight:900;}
+  .mobilebar .mtel{background:var(--ink);color:#fff;}
+  .mobilebar .mform{background:var(--orange);color:#fff;}
+  body{padding-bottom:56px;}
+}
+@media (max-width:520px){
+  .qgrid,.statrow,.steps{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="sbar" id="sbar" aria-hidden="true"></div>
+<noscript><style>.rv{opacity:1!important;transform:none!important}.gfg{stroke-dashoffset:0!important}</style></noscript>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">ON<span>SAFETY</span></div>
+      <div class="tag">안전보건 교육 전문</div>
+    </div>
+    <div class="actions">
+      <a class="tel" href="tel:16006223"><small>상담</small>1600-6223</a>
+      <a class="btn btn-primary" href="#apply">출강 상담 신청</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="fx" aria-hidden="true">
+    <svg class="f1" viewBox="0 0 24 24"><path d="M12 3 2 21h20L12 3z"/><path d="M12 10v5M12 18v.5"/></svg>
+    <svg class="f2" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5L16 9.5"/></svg>
+    <svg class="f3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg>
+    <svg class="f4" viewBox="0 0 24 24"><path d="M12 3 2 21h20L12 3z"/><path d="M12 10v5M12 18v.5"/></svg>
+    <svg class="f5" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>
+  </div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">고용노동부 근로자안전보건교육기관 · 위험성평가담당자교육기관</span>
+      <div class="kicker">정부지원 환급과정</div>
+      <h1>위험성평가, 이제 남에게 맡기지 마세요.<br><span class="hl">우리 사업장, 우리가 직접 완성합니다.</span></h1>
+      <p class="sub">전문 강사의 실무 노하우부터 <b>사진으로 끝내는 AI위험성평가 도구</b>까지 제공해, 스스로 수행할 수 있는 역량을 키워 드립니다.</p>
+      <div class="dualchips">
+        <span class="chip chip-ai">✓ 위험성평가 완성</span>
+        <span class="plus">+</span>
+        <span class="chip chip-ai">✓ AI위험성평가 프로그램 활용</span>
+        <span class="dual-note">하나의 과정으로, 둘 다</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="#calc">실부담금 계산하기</a>
+        <a class="btn btn-ghost btn-lg" href="#apply">출강 상담 신청</a>
+      </div>
+    </div>
+    <div class="pricecard warmcard">
+      <div class="plabel">소규모기업 위험성평가 역량다지기</div>
+      <ul class="wlist">
+        <li><i>1</i><div><b>안전전문강사가 사업장으로 찾아갑니다</b><span>우리 현장 사정을 아는 분이 직접 옵니다</span></div></li>
+        <li><i>2</i><div><b>기존 위험성평가 서류를 검토하고 최신화해 드립니다</b><span>이미 만들어 둔 서류를 버리지 않고, 우리 현장에 맞게 다듬습니다</span></div></li>
+        <li><i>3</i><div><b>교육비 부담은 정부지원으로</b><span>환급 서류도 전담팀이 챙겨 드립니다</span></div></li>
+      </ul>
+      <div class="pnote">※ 지원 여부와 범위는 기업 규모·환급 요건에 따라 달라지며, 상담 시 정확히 확인해 드립니다.</div>
+    </div>
+  </div>
+</header>
+<div class="urgency"><div class="tick"><div class="trk"><span>위험성평가는 <b>이미 사업주의 법적 의무</b>입니다</span><i>●</i><span>개정 제36조 <b>2026.6.1 시행</b> — 근로자 참여·결과 공유 강화</span><i>●</i><span>과태료 <b>2027.1.1(50인 이상) · 2028.1.1(50인 미만)</b>부터 단계 적용</span><i>●</i><span>중대재해처벌법 5인 이상 확대 — <b>더는 미룰 수 없습니다</b></span><i>●</i></div><div class="trk dup" aria-hidden="true"><span>위험성평가는 <b>이미 사업주의 법적 의무</b>입니다</span><i>●</i><span>개정 제36조 <b>2026.6.1 시행</b> — 근로자 참여·결과 공유 강화</span><i>●</i><span>과태료 <b>2027.1.1(50인 이상) · 2028.1.1(50인 미만)</b>부터 단계 적용</span><i>●</i><span>중대재해처벌법 5인 이상 확대 — <b>더는 미룰 수 없습니다</b></span><i>●</i></div></div></div>
+<div class="stripe" role="presentation"></div>
+
+<!-- LEGAL -->
+<section class="legal" id="legal">
+  <div class="wrap">
+    <span class="eyebrow rv">위험성평가 법령 안내</span>
+    <h2 class="rv">위험성평가, 법이 요구하는 것을<br>정확히 알려드립니다</h2>
+    <p class="lead rv">위험성평가는 새로 생긴 의무가 아니라 산업안전보건법 제36조에 따라 이미 사업주에게 있는 의무입니다. 2026년 6월 1일 개정 법이 시행되면서 근로자 참여와 결과 공유, 개선대책 이행의 요구 수준이 높아졌고, 이를 지키지 않을 때의 과태료는 사업장 규모에 따라 단계적으로 적용됩니다.</p>
+
+    <h3 class="subh rv">시행 일정</h3>
+    <div class="tl rv" id="tl">
+      <div class="tl-track"><div class="tl-fill"></div></div>
+      <div class="tn" style="--d:.3s"><div class="dot"></div><div class="date">2026.06.01</div><h4>개정 제36조 시행</h4><p>개선대책 이행, 근로자 참여·주지 의무가 강화되었습니다.</p></div>
+      <div class="tn" style="--d:1.3s"><div class="dot"></div><div class="date">2027.01.01</div><h4>과태료 적용 시작</h4><p>상시근로자 50인 이상 사업장부터 단계 적용됩니다.</p></div>
+      <div class="tn" style="--d:2.3s"><div class="dot"></div><div class="date">2028.01.01</div><h4>50인 미만으로 확대</h4><p>50인 미만 사업장도 과태료 적용 대상이 됩니다.</p></div>
+    </div>
+
+    <h3 class="subh rv">사업주가 지켜야 하는 5가지</h3>
+    <div class="dutygrid">
+      <div class="duty rv"><div class="dno">01</div><h4>실시</h4><p>유해·위험요인을 찾아 위험성을 평가하고, 그 결과에 따라 필요한 조치를 해야 합니다. <em>산업안전보건법 제36조</em></p></div>
+      <div class="duty rv" style="--d:.08s"><div class="dno">02</div><h4>근로자 참여·결과 공유</h4><p>평가 과정에 근로자를 참여시키고, 근로자대표의 참여를 보장하며, 결과를 근로자에게 알려야 합니다. <em>2026.6.1 요구 수준 강화</em></p></div>
+      <div class="duty rv" style="--d:.16s"><div class="dno">03</div><h4>개선대책 이행</h4><p>평가에서 끝내지 않고 개선대책을 실제로 이행해야 합니다. <em>2026.6.1 이행 의무 강화</em></p></div>
+      <div class="duty rv" style="--d:.24s"><div class="dno">04</div><h4>기록·보존 3년</h4><p>유해·위험요인, 위험성 결정 내용, 조치 내용을 기록해 3년간 보존해야 합니다. <em>시행규칙 제37조</em></p></div>
+      <div class="duty wide rv" style="--d:.32s"><div class="dno">05</div><h4>중대재해처벌법과 연결</h4><p>중대재해처벌법 시행령 제4조는 유해·위험요인을 확인하고 개선하는 절차가 실제로 작동하는지 반기 1회 이상 점검하도록 합니다. 산업안전보건법 제36조의 위험성평가를 실시했거나 그 결과를 보고받은 경우에는 점검한 것으로 봅니다.</p></div>
+    </div>
+
+    <h3 class="subh rv">위반하면, 과태료는 이렇게 올라갑니다</h3>
+    <div class="fines rv" id="fines">
+      <div class="fine"><div class="fname">위험성평가를 하지 않은 경우</div>
+        <div class="frow"><span>1차</span><div class="fbar"><i style="--w:50%;--d:.1s"></i></div><b>500만원</b></div>
+        <div class="frow"><span>2차</span><div class="fbar"><i style="--w:70%;--d:.3s"></i></div><b>700만원</b></div>
+        <div class="frow"><span>3차</span><div class="fbar"><i class="top" style="--w:100%;--d:.5s"></i></div><b>1,000만원</b></div></div>
+      <div class="fine"><div class="fname">근로자(대표) 참여를 보장하지 않았거나 결과를 공유하지 않은 경우</div>
+        <div class="frow"><span>1차</span><div class="fbar"><i style="--w:15%;--d:.2s"></i></div><b>150만원</b></div>
+        <div class="frow"><span>2차</span><div class="fbar"><i style="--w:30%;--d:.4s"></i></div><b>300만원</b></div>
+        <div class="frow"><span>3차</span><div class="fbar"><i class="top" style="--w:50%;--d:.6s"></i></div><b>500만원</b></div></div>
+      <div class="fine"><div class="fname">평가 결과를 기록·보존하지 않은 경우</div>
+        <div class="frow"><span>1차</span><div class="fbar"><i style="--w:5%;--d:.3s"></i></div><b>50만원</b></div>
+        <div class="frow"><span>2차</span><div class="fbar"><i style="--w:15%;--d:.5s"></i></div><b>150만원</b></div>
+        <div class="frow"><span>3차</span><div class="fbar"><i class="top" style="--w:30%;--d:.7s"></i></div><b>300만원</b></div></div>
+    </div>
+    <div class="notice rv"><b>안내</b> 위 내용은 2026년 10월 기준 공개 자료를 정리한 것입니다. 과태료 금액은 산업안전보건법 시행령 개정안(국무회의 의결) 기준이며, 최종 조문과 시행 시기는 <a href="https://www.law.go.kr" target="_blank" rel="noopener">국가법령정보센터</a>와 고용노동부 안내에서 확인하시기 바랍니다. 과태료 적용 시기 전에도 위험성평가는 현재 사업주의 의무입니다.
+      <div class="srcs">근거 자료 ·
+        <a href="https://www.moel.go.kr/local/cheongju/info/dataroom/view.do?bbs_seq=20260600554" target="_blank" rel="noopener">고용노동부 청주지청 위험성평가 개정 안내</a> ·
+        <a href="https://www.mtnews.net/news/articleView.html?idxno=25387" target="_blank" rel="noopener">기계신문 시행령 개정안 의결</a> ·
+        <a href="https://www.yulchon.com/ko/resources/publications/legal-update-view/43137/page.do" target="_blank" rel="noopener">율촌 노동칼럼</a></div></div>
+
+    <div class="smallbiz rv">
+      <div class="sb-ico" aria-hidden="true">👋</div>
+      <div><h4>50인 미만 사업장 대표님이라면</h4>
+      <p>50인 미만 사업장의 과태료 적용은 2028년 1월 1일부터입니다. 그래도 위험성평가 의무는 지금 사업주에게 똑같이 있고, 인정 요건을 갖추면 산재보험료를 인하받는 길도 열려 있습니다. 서두를수록 부담은 줄고 혜택은 먼저 챙기게 됩니다.</p></div>
+    </div>
+    <p class="lead2 rv">이런 경우라면 특히 서둘러야 합니다</p>
+    <div class="checkgrid">
+      <div class="checkcard"><div class="cbox">✓</div><p>노동부 점검에서 위험성평가 미실시를 지적받은 기업</p></div>
+      <div class="checkcard"><div class="cbox">✓</div><p>원청으로부터 위험성평가 자료 제출을 요구받는 협력사</p></div>
+      <div class="checkcard"><div class="cbox">✓</div><p>산재 발생 이력이 있어 후속 조치가 필요한 기업</p></div>
+      <div class="checkcard"><div class="cbox">✓</div><p>산재보험료 할인·정부 지원사업 신청을 준비하는 기업</p></div>
+    </div>
+    <p class="turn rv">하나라도 해당된다면 — <span>정부지원으로 비용 부담은 덜고, 확실하게 끝낼 수 있습니다.</span></p>
+  </div>
+</section>
+
+
+<!-- DELIVERABLES -->
+<section class="deliver" id="deliver">
+  <div class="wrap">
+    <span class="eyebrow">교육이 아니라 결과물</span>
+    <h2>교육 후, 손에 남는 것</h2>
+    <p class="lead">이 과정은 이론과 함께, 실무를 해결해 드립니다.</p>
+    <div class="dgrid three">
+      <div class="dcard"><div class="dval">결과물 1 · 컨설팅 의뢰 시 수백만 원 상당</div><h3>우리 사업장 위험성평가 실시 문서</h3><p>유해·위험요인 발굴부터 감소대책까지 문서로 완성합니다. 이론 수업이 아닙니다.</p></div>
+      <div class="dcard"><div class="dval">결과물 2 · 실현금 혜택</div><h3>위험성평가 인정 로드맵 안내</h3><p class="small">위험성평가 인정 시 산재보험료 20% 할인</p></div>
+      <div class="dcard"><div class="dval">결과물 3 · 대표님의 방패</div><h3>중대재해처벌법 대응 증빙 이력</h3><p>산업안전보건법 제36조 의무 이행 기록 확보 — 점검·사고 시 대표를 지키는 근거가 됩니다.</p></div>
+    </div>
+    <p class="fineprint rv">※ 위험성평가 인정 대상은 제조업·기타업 상시근로자 100인 미만, 건설업 공사금액 120억 원 미만(토목 150억 원 미만) 사업장이며, 산재보험료 인하는 산재예방요율제 적용 50인 미만 사업장에 해당합니다. 인정 기준과 감면 조건은 변경될 수 있으니 상담 시 확인해 드립니다. (참고: <a href="https://www.ajunews.com/view/20261013113852176" target="_blank" rel="noopener" style="text-decoration:underline">아주경제 2026.10.13</a>)</p>
+    <div class="aibox">
+      <div class="ai-badge">그리고 하나 더</div>
+      <div class="ai-body">
+        <h3><span>AI로 하는 위험성평가</span> — 직원들의 AI 역량까지 함께 다집니다</h3>
+        <p>과정에는 AI 도구를 활용해 유해·위험요인을 도출하고 위험성평가 문서를 작성하는 <b>AI 활용 실습</b>이 포함됩니다. 위험성평가를 끝내는 8시간 동안, 직원들은 실무에 바로 쓰는 AI 활용법까지 익힙니다. AI 교육을 함께 운영하는 안전보건 전문기관이기에 가능한 커리큘럼입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MODES -->
+<section class="modes">
+  <div class="wrap">
+    <span class="eyebrow">수강 방식</span>
+    <h2>사업장 인원의 상황에 맞게<br>맞춤교육으로 진행됩니다</h2>
+    <div class="mgrid">
+      <div class="mcard rec">
+        <div class="mhead"><h3>찾아가는 교육</h3><span class="mb">추천</span></div>
+        <ul>
+          <li><b>5인 이상</b>이면 강사가 귀사로 출강합니다</li>
+          <li>이동시간 0분 — 라인 옆 회의실이면 충분합니다</li>
+          <li>우리 현장이 곧 교보재, 문서 완성도가 가장 높습니다</li>
+          <li>일정은 협의해 정합니다</li>
+        </ul>
+        <div class="who"><b>이런 기업</b> — 한 회사에서 5명 이상 수강</div>
+      </div>
+      <div class="mcard">
+        <div class="mhead"><h3>상설교육 (가산사업장 · 지역별 거점 교육장)</h3></div>
+        <ul>
+          <li><b>소수 인원이라도</b> 타사와 합반으로 수강할 수 있습니다</li>
+          <li>가산사업장 및 각 지역별 거점 교육장 (상담 시 안내)</li>
+          <li>개설 일정 중 원하는 날짜를 선택하세요</li>
+          <li>별도 교육 공간이 없어도 참여할 수 있습니다</li>
+        </ul>
+        <div class="who"><b>이런 기업</b> — 소수 인원(1~4명), 사업장 내 회의실 등이 없는 경우</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- STORY : 왜 전 직원인가 -->
+<section class="story">
+  <div class="wrap">
+    <span class="eyebrow">왜 전 직원인가</span>
+    <h2>위험성평가는<br>안전담당자만의 숙제가 아닙니다</h2>
+    <div class="storygrid">
+      <div class="scene bad">
+        <div class="stag">안전담당자 혼자서 위험성평가를 담당하는 회사</div>
+        <p>담당자 한 명이 교육과 업무를 맡고, 위험성평가 서류를 만듭니다. 몇 달 뒤에도 현장의 안전은 그대로입니다. 현장의 위험을 가장 잘 아는 사람은 매일 현장에서 일하는 작업자인데 — <b>그 사람은 실상 위험성평가가 뭔지 모릅니다.</b></p>
+      </div>
+      <div class="scene good">
+        <div class="stag">전 직원이 함께한 회사</div>
+        <p>대표는 책임 구조를, 관리감독자는 운영 방법을, 근로자는 내 자리의 위험을 찾는 법을 — 같은 8시간에 각자의 역할을 배웁니다. 교육이 끝나면 현장에서 먼저 말이 나옵니다. <b>"여기, 위험한데요."</b> 위험성평가는 그 한마디에서 시작됩니다.</p>
+      </div>
+    </div>
+    <div class="storyline">
+      법도 같은 방향을 가리킵니다. 위험성평가의 유해·위험요인 파악에는 <b>근로자 참여</b>가 요구됩니다.<br>
+      <span>1명이 다녀온 교육은 서류를 남기고, 전 직원이 함께한 교육은 문화를 남깁니다.</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="wrap">
+    <span class="eyebrow">수강 기업의 이야기</span>
+    <h2>교육이 끝난 뒤, 이런 후기들을 남겨주셨습니다</h2>
+    <!-- ※ 아래 후기는 예시 문안입니다. 파일럿 교육 후 실제 수강 기업의 동의받은 후기로 교체하세요. -->
+    <div class="rgrid">
+      <div class="rcard">
+        <p class="rquote">"컨설팅 업체에 수백만 원의 견적을 받고 모두 맡겨놓았는데 늘 그때뿐이었습니다. 교육 수강 후에는 전 직원이 참여하는 위험성평가가 되고 있습니다. 직원들이 직접 위험요인을 찾아내는 걸 보고 솔직히 놀랐어요."</p>
+        <div class="rwho">금속가공 제조업 · 직원 12명 · 대표</div>
+      </div>
+      <div class="rcard">
+        <p class="rquote">"하루를 통째로 빼는 게 부담이었는데, 강사가 현장으로 와서 우리 현장에 맞게 위험성평가에 대해 알려주니 교육이 아니라 우리 일을 한 느낌이었습니다. 매년 위험성평가 교육을 받으면서 역량 향상에 큰 도움이 되고 있습니다."</p>
+        <div class="rwho">물류센터 · 직원 28명 · 관리팀장</div>
+      </div>
+      <div class="rcard">
+        <p class="rquote">"저 혼자 몇 번 교육을 다녀와도 안 바뀌던 게, 전 직원이 같이 들으니 한 번에 됐습니다. 요즘은 현장에서 먼저 '이거 위험한데요'라는 말이 나옵니다."</p>
+        <div class="rwho">식품제조업 · 직원 62명 · 안전보건담당</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- QUALIFY -->
+<section class="qualify" id="qualify">
+  <div class="wrap">
+    <span class="eyebrow">환급 대상 확인</span>
+    <h2>아무 기업이나 들을 수 없습니다</h2>
+    <p class="lead">정부지원 과정이므로 아래 조건을 충족해야 자기부담 5~10%(1인 17,500원부터)가 적용됩니다. 조건에 해당하는지 30초면 확인됩니다.</p>
+    <div class="qgrid">
+      <div class="qcard"><div class="qnum">조건 01</div><h3>고용보험 가입 사업장</h3><p>훈련일 기준 재직 근로자가 고용보험에 가입되어 있어야 합니다.</p></div>
+      <div class="qcard"><div class="qnum">조건 02</div><h3>중소기업 (우선지원대상)</h3><p>중소·우선지원대상기업이 환급 혜택의 중심 대상입니다.</p></div>
+      <div class="qcard"><div class="qnum">조건 03</div><h3>연간 환급 한도 잔여</h3><p>기업별 환급 한도가 남아 있어야 합니다. 상담 시 저희가 함께 확인해 드립니다.</p></div>
+      <div class="qcard"><div class="qnum">조건 04</div><h3>수강 인원</h3><p>5인 이상이면 출강, 1~4인은 가산 교육장 합반으로 참여할 수 있습니다.</p></div>
+    </div>
+    <p class="fineprint">※ 정확한 환급 가능 여부와 예상 실부담금은 상담 과정에서 기업별로 확인해 드립니다. 환급이 불가한 조건이라면 미리 알려드립니다.</p>
+  </div>
+</section>
+
+
+<!-- LIMIT -->
+<section class="limit" id="limit">
+  <div class="wrap">
+    <span class="eyebrow rv">지원금 한도 조회</span>
+    <h2 class="rv">우리 회사 지원금 한도,<br>3단계로 확인하세요</h2>
+    <p class="lead rv">정부 지원금은 기업별 연간 지원한도 안에서 적용됩니다. 한도는 고용24와 고용·산재보험 토탈서비스에서 직접 조회할 수 있고, 어려우시면 저희가 대신 확인해 드립니다.</p>
+
+    <div class="lsteps" id="lsteps">
+      <div class="lline"><div class="lfill"></div></div>
+      <div class="lstep rv"><div class="lno">1</div><h3>고용24에서 한도 조회</h3><p>고용24 기업회원으로 로그인해 사업주훈련 지원한도를 확인합니다. 메뉴 위치는 개편에 따라 달라질 수 있습니다.</p><a class="lbtn" href="https://www.work24.go.kr" target="_blank" rel="noopener">고용24 바로가기 ›</a></div>
+      <div class="lstep rv" style="--d:.15s"><div class="lno">2</div><h3>우선지원대상기업 확인</h3><p>고용·산재보험 토탈서비스에서 우선지원대상기업 해당 여부를 확인합니다.</p><a class="lbtn" href="https://total.comwel.or.kr" target="_blank" rel="noopener">토탈서비스 바로가기 ›</a></div>
+      <div class="lstep rv" style="--d:.3s"><div class="lno">3</div><h3>어려우면 상담 신청</h3><p>사업자등록번호와 상시근로자 수만 알려주시면 대상 여부와 한도를 대신 확인해 드립니다.</p><a class="lbtn" href="#apply">상담 신청하기 ›</a></div>
+    </div>
+
+    <div class="sim rv">
+      <div class="simhead"><h3>한도 시뮬레이터</h3><span>조회한 한도를 넣으면, 몇 명까지 지원받을 수 있는지 바로 계산합니다</span></div>
+      <div class="simbody">
+        <div class="simin">
+          <label class="sl" for="limInput">내 지원한도 (고용24 조회 값)</label>
+          <div class="limrow"><input id="limInput" type="number" min="0" step="10" value="500" inputmode="numeric"><span class="unit">만원</span></div>
+          <div class="chips"><button type="button" data-lim="500">500만</button><button type="button" data-lim="1000">1,000만</button><button type="button" data-lim="2000">2,000만</button><button type="button" data-lim="5000">5,000만</button></div>
+          <label class="sl" for="limPeople">수강 인원 <b id="limPeopleOut">10</b>명</label>
+          <input id="limPeople" type="range" min="5" max="100" value="10" step="1" aria-label="수강 인원">
+          <div class="sl">사업장 위치</div>
+          <div class="seg"><label><input type="radio" name="region" value="cap" checked><span>수도권 · 지원 90%</span></label><label><input type="radio" name="region" value="non"><span>비수도권 · 최대 95%</span></label></div>
+        </div>
+        <div class="simout" aria-live="polite">
+          <svg class="gauge" viewBox="0 0 140 140" role="img" aria-label="한도 사용률"><circle class="gbg" cx="70" cy="70" r="58"/><circle class="gfg" id="gFg" cx="70" cy="70" r="58" transform="rotate(-90 70 70)"/><text x="70" y="72" class="gv" id="gTxt">0%</text><text x="70" y="94" class="gl">한도 사용</text></svg>
+          <div class="sres">
+            <div class="srow"><span>교육비 총액</span><b id="sTotal">0원</b></div>
+            <div class="srow"><span>정부지원액 (한도에서 차감)</span><b id="sGov">0원</b></div>
+            <div class="srow"><span>자기부담 총액</span><b id="sSelf" class="or">0원</b></div>
+            <div class="srow"><span>남는 한도</span><b id="sRemain">0원</b></div>
+            <div class="verdict" id="sVerdict">조회한 한도를 입력해 주세요.</div>
+          </div>
+        </div>
+      </div>
+      <p class="simnote">※ 1인 교육비 350,000원 기준의 참고용 계산입니다. 수도권 90%·비수도권 최대 95% 지원 기준을 적용했으며, 실제 한도 차감과 환급 금액은 기업 상황에 따라 달라질 수 있습니다. 고용24 조회 값과 상담에서 확정되는 금액이 우선합니다.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- CALCULATOR -->
+<section class="calc" id="calc">
+  <div class="wrap">
+    <span class="eyebrow">스마트 견적</span>
+    <h2>우리 회사 실부담금, 지금 계산해 보세요</h2>
+    <div class="calcbox">
+      <div class="chead"><h3>실부담금 계산기</h3><span>인원을 조절하면 즉시 계산됩니다</span></div>
+      <div class="calcbody">
+        <div class="nsel">
+          <label for="npeople">수강 인원</label>
+          <div class="nval"><span id="nOut">10</span><small>명</small></div>
+          <input type="range" id="npeople" min="5" max="50" value="10" step="1" aria-label="수강 인원 선택">
+        </div>
+        <div class="calcout" aria-live="polite">
+          <div class="crow"><span class="cl">교육비 총액</span><span class="cv" id="cTotal">3,500,000원</span></div>
+          <div class="crow"><span class="cl">정부지원액 (최대 95%)</span><span class="cv" id="cRefund">− 3,325,000원</span></div>
+          <div class="crow total"><span class="cl">자기부담 총액 (5~10%)</span><span class="cv" id="cBurden">175,000원부터</span></div>
+          <div class="crow save"><span class="cl">위험성평가 컨설팅 대행 대비</span><span class="cv" id="cSave">약 180만 원 이상 절감</span></div>
+        </div>
+      </div>
+      <p class="calcnote">※ 자기부담은 기업 규모·환급 요건에 따라 5~10% 범위에서 결정되며(표시 금액은 5% 기준), 수료 시 적용됩니다. 정확한 금액은 상담 시 기업별로 확인해 드립니다. 컨설팅 대행 비교액은 소규모 사업장 위험성평가 컨설팅 통상 시장가(최소 200만 원 수준)를 기준으로 한 참고치입니다.</p>
+    </div>
+  </div>
+</section>
+
+
+<div class="stripe" role="presentation"></div>
+
+<!-- WHY ONLY -->
+<section class="why">
+  <div class="wrap">
+    <span class="eyebrow">왜 온세이프티인가</span>
+    <h2>안전보건교육, 전문기관에 맡겨야 합니다</h2>
+    <p class="lead">온세이프티는 안전보건교육전문기관으로서 이 한 분야에 집중하며 교육을 연구하고 만들어 왔습니다. 법정의무교육부터 위험성평가 교육까지, 현장에서 바로 쓰이는 교육을 한 곳에서 제공합니다.</p>
+    <div class="statrow">
+      <div class="stat"><div class="sv">A등급</div><div class="sl">안전교육기관 평가</div></div>
+      <div class="stat"><div class="sv"><span data-count="200000">200,000</span>+</div><div class="sl">연간 교육 인원</div></div>
+      <div class="stat"><div class="sv"><span data-count="200">200</span>개+</div><div class="sl">자체 개발 교육과정</div></div>
+      <div class="stat"><div class="sv">상시개설</div><div class="sl">온라인 · 우편 · 집체</div></div>
+    </div>
+    <div class="faculty">
+      <div class="fnum"><span data-count="50">50</span><em>명+</em><small>전문 안전보건강사</small></div>
+      <div class="fbody">
+        <h3>현장을 이해하는 강사, <span>실무에 강한 위험성평가 교육</span></h3>
+        <p>단순한 이론 전달을 넘어, 실제 현장 경험을 바탕으로 위험요인을 발굴하고 개선대책을 수립하는 방법을 교육합니다. 업종과 작업 특성을 고려하여 적합한 전문강사를 배정합니다.</p>
+        <div class="fchips"><span>지도사</span><span>기술사</span><span>기사</span><span>업종별 실무경험 안전관리자 출신</span><span>보건관리자 출신</span></div>
+      </div>
+    </div>
+    <div class="onlybox">
+      <h3>전문가와 함께 만들고,<br><span>교육비 부담까지 덜어드립니다.</span></h3>
+      <p>위험성평가는 서류만 채운다고 끝나지 않습니다. 강사가 우리 사업장을 직접 찾아와 현장을 함께 돌아보며 위험성평가를 완성하고, 교육비는 <b>정부지원 환급</b>으로 부담을 덜 수 있습니다. 환급 신청과 증빙 서류도 <b>온세이프티 전담팀이 챙기니</b> 담당자님은 교육에만 집중하시면 됩니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="ig-sec" id="instagram">
+  <div class="wrap">
+    <div class="igcard">
+      <div class="igicon" aria-hidden="true"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="#fff"/></svg></div>
+      <div class="igbody">
+        <span class="eyebrow">@on_safety_ · 온세이프티 공식 인스타그램</span>
+        <h3>위험성평가, 인스타그램에서 먼저 확인하세요</h3>
+        <p>위험성평가 관련 안내 글을 인스타그램에 올리고 있습니다. 팔로우하고 새 소식을 받아보세요.</p>
+      </div>
+      <a class="igbtn" href="https://www.instagram.com/on_safety_/" target="_blank" rel="noopener">인스타그램에서 보기 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="wrap">
+    <span class="eyebrow">진행 절차</span>
+    <h2>신청부터 환급까지, 4단계</h2>
+    <div class="steps">
+      <div class="step"><div class="sn">STEP 1</div><h3>상담·대상 확인</h3><p>전화 또는 신청 폼으로 환급 대상·한도를 함께 확인합니다.</p></div>
+      <div class="step"><div class="sn">STEP 2</div><h3>일정 확정</h3><p>출강 날짜 또는 교육장 회차를 확정합니다.</p></div>
+      <div class="step"><div class="sn">STEP 3</div><h3>교육·문서 완성</h3><p>8시간 실습으로 우리 사업장 위험성평가를 완료합니다.</p></div>
+      <div class="step"><div class="sn">STEP 4</div><h3>환급 처리</h3><p>환급 신청·증빙 서류까지 온세이프티 전담팀이 전 과정을 처리합니다.</p></div>
+    </div>
+    <div class="notice"><b>투명하게 안내드립니다.</b> 본 과정은 법정 안전보건교육 시간으로 인정되지 않습니다. 이 과정의 목적은 교육시간 충족이 아니라 산업안전보건법 제36조의 위험성평가 실시 의무를 이행하는 것입니다. 정부지원은 수료 시 적용되며, 자기부담 5~10%는 기업 규모·환급 요건에 따라 결정됩니다.</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <span class="eyebrow">자주 묻는 질문</span>
+    <h2>궁금하신 점, 미리 답해드립니다</h2>
+    <details>
+      <summary>법정 안전보건교육 시간으로 인정되나요?</summary>
+      <div class="ans">아니요, 인정되지 않습니다. 이 과정은 교육시간을 채우는 과정이 아니라 <b>위험성평가 실시 의무 자체를 이행</b>하는 실습 과정입니다. 법정 안전보건교육이 필요하시면 별도 과정으로 신청하실 수 있고, 상담 시 함께 안내해 드립니다.</div>
+    </details>
+    <details>
+      <summary>위험성평가 과태료는 언제부터 부과되나요?</summary>
+      <div class="ans">개정 산업안전보건법 제36조는 <b>2026년 6월 1일</b>부터 시행되었고, 과태료는 <b>상시근로자 50인 이상 사업장 2027년 1월 1일, 50인 미만 사업장 2028년 1월 1일</b>부터 단계 적용되는 것으로 안내되고 있습니다. 다만 과태료 적용 전에도 위험성평가는 현재 사업주의 의무이며, 정확한 시기는 국가법령정보센터와 고용노동부 안내로 확인하시기 바랍니다.</div>
+    </details>
+    <details>
+      <summary>지원금 한도는 어디서 확인하나요?</summary>
+      <div class="ans">고용24 기업회원으로 로그인해 사업주훈련 지원한도를 확인하고, 고용·산재보험 토탈서비스에서 우선지원대상기업 여부를 확인합니다. 어려우시면 <b>사업자등록번호와 상시근로자 수</b>만 알려주세요. 저희가 대신 확인해 드립니다.</div>
+    </details>
+    <details>
+      <summary>우리 회사가 환급 대상인지 어떻게 확인하나요?</summary>
+      <div class="ans">고용보험 가입 여부, 기업 규모, 연간 환급 한도 잔여에 따라 결정됩니다. 신청 폼을 남겨주시면 <b>상담 과정에서 저희가 기업별로 직접 확인</b>해 드리고, 환급이 어려운 경우 미리 알려드립니다.</div>
+    </details>
+    <details>
+      <summary>5명이 안 되는데 들을 수 있나요?</summary>
+      <div class="ans">네, 1~4명 기업은 가산디지털단지 상설교육장이나 각 지역별 교육장에서 <b>타사와 합반</b>으로 수강하실 수 있습니다. 개설 일정 중 원하는 날짜를 선택하시면 됩니다.</div>
+    </details>
+    <details>
+      <summary>하루 8시간을 통째로 빼기 어렵습니다.</summary>
+      <div class="ans">찾아가는 교육은 이동시간이 없어 실제 부담이 크게 줄어듭니다. 또한 이 8시간은 강의를 듣는 시간이 아니라 <b>어차피 해야 할 위험성평가를 끝내는 시간</b>입니다. 일정 운영 방식은 상담 시 기업 상황에 맞춰 협의해 드립니다.</div>
+    </details>
+    <details>
+      <summary>AI 실습에서는 구체적으로 무엇을 배우나요?</summary>
+      <div class="ans">생성형 AI(ChatGPT·Claude 등)를 활용해 <b>①우리 공정의 유해·위험요인 도출 보완 ②감소대책 아이디어 구체화 ③위험성평가 문서 초안 작성·검토</b>를 직접 실습합니다. 교육 후에도 반복해서 쓸 수 있도록 <b>위험성평가용 AI 지시문(프롬프트) 템플릿</b>을 드리기 때문에, 다음 위험성평가부터는 직원들이 스스로 AI와 함께 문서를 만들 수 있습니다. 작성 시간은 줄고, 문서의 구체화 수준은 올라갑니다.</div>
+    </details>
+    <details>
+      <summary>AI를 전혀 모르는 직원도 따라갈 수 있나요?</summary>
+      <div class="ans">네, 오히려 그런 분들을 기준으로 설계했습니다. 스마트폰이나 PC에서 AI에게 <b>우리 작업을 말로 설명하고 위험요인을 뽑아보는 것</b>부터 시작하기 때문에 특별한 컴퓨터 지식이 필요 없습니다. 현장에서 처음 AI를 써본 분들이 가장 크게 놀라는 과정이고, 이 경험 자체가 직원들에게는 <b>실무에 바로 쓰는 AI 첫 교육</b>이 됩니다.</div>
+    </details>
+    <details>
+      <summary>안전교육기관이 AI 교육까지 할 수 있나요?</summary>
+      <div class="ans">온세이프티는 공공기관과 대기업 협력사를 대상으로 <b>안전관리자 AI 실무 역량 과정을 운영해온 기관</b>입니다. IT(컴퓨터공학)와 안전융합공학을 함께 전공한 대표가 커리큘럼을 직접 설계합니다. 안전을 아는 AI 강사, AI를 아는 안전 강사가 드물기 때문에 — <b>"AI로 하는 위험성평가"는 온세이프티라서 가능한 커리큘럼</b>입니다.</div>
+    </details>
+    <details>
+      <summary>안전보건공단 무료 담당자교육과 무엇이 다른가요?</summary>
+      <div class="ans">담당자교육은 담당자 1명이 이론을 배우는 과정입니다. 이 과정은 <b>우리 회사에서, 우리 직원들과 함께, 우리 사업장의 위험성평가를 실제로 수행하고 문서까지 남기는</b> 실행 단계의 과정입니다. 두 과정은 상호보완 관계입니다.</div>
+    </details>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="apply" id="apply">
+  <div class="wrap">
+    <span class="eyebrow">상담 신청</span>
+    <h2>30초면 충분합니다</h2>
+    <p class="lead" style="color:#D9CFC6">남겨주시면 담당자가 <b style="color:var(--amber)">2시간 이내</b>에 연락드려 환급 대상 여부부터 확인해 드립니다.</p>
+    <div class="deadline">선착순 마감중 · 기업별 환급 한도 소진 전 서두르세요</div>
+    <form class="formgrid" id="leadForm" novalidate>
+      <div class="field"><label for="fCompany">회사명</label><input id="fCompany" name="company" type="text" placeholder="주식회사 ○○" required></div>
+      <div class="field"><label for="fName">담당자 성함</label><input id="fName" name="name" type="text" placeholder="홍길동" required></div>
+      <div class="field"><label for="fPhone">연락처</label><input id="fPhone" name="phone" type="tel" placeholder="010-0000-0000" required></div>
+      <div class="field"><label for="fCount">예상 수강 인원</label>
+        <select id="fCount" name="count"><option>1~4명 (교육장 합반)</option><option selected>5~9명</option><option>10~19명</option><option>20명 이상</option></select>
+      </div>
+      <div class="field full"><label for="fMode">희망 방식</label>
+        <select id="fMode" name="mode"><option selected>찾아가는 교육 (출강)</option><option>상설교육 (가산 교육장)</option><option>상담 후 결정</option></select>
+      </div>
+      <label class="consent"><input type="checkbox" id="fConsent" required> <span>상담 목적의 개인정보 수집·이용에 동의합니다. (회사명, 성함, 연락처 / 상담 완료 후 파기)</span></label>
+      <button class="btn btn-primary btn-lg" type="submit">환급 대상 확인받기</button>
+      <div class="success" id="formSuccess">✓ 신청이 접수되었습니다. 담당자가 2시간 이내(영업시간 기준)에 연락드리겠습니다. 급하시면 <b>1600-6223</b>으로 전화 주세요.</div>
+    </form>
+    <div class="altcta">
+      <span>전화가 편하시면 지금 바로 <b>1600-6223</b></span>
+      <span>·</span>
+      <a href="https://pf.kakao.com/_xiGbhG" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px;">카카오톡 1:1 상담</a>
+      <span>·</span>
+      <span>네이버에서 <b style="color:var(--amber)">"온세이프티 교육원"</b> 검색</span>
+      <span>·</span>
+      <a href="https://www.instagram.com/on_safety_/" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px;">인스타그램 @on_safety_</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fbrand">주식회사 온<span>세이프티</span> — 안전보건 교육 전문</div>
+      법과 기준을 넘어, 산업현장에 맞춘 안전보건 전문 서비스<br>
+      서울특별시 금천구 가산디지털1로 168 우림라이온스밸리 C동 501호 · 대표이사 이종은 · 사업자등록번호 564-88-02913
+    </div>
+    <div>
+      고객센터 <b style="color:#fff">1600-6223</b> · 교육신청 1600-6213<br>
+      상담시간 평일 09:00–17:00 · www.onsafety.kr
+    </div>
+  </div>
+</footer>
+
+<div class="mobilebar">
+  <a class="mtel" href="tel:16006223">📞 1600-6223</a>
+  <a class="mform" href="#apply">출강 상담 신청</a>
+</div>
+
+<script>
+// ===== 공통: 모션 유틸 =====
+const RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const nf = new Intl.NumberFormat('ko-KR');
+const won = v => nf.format(Math.round(v)) + '원';
+function tween(el, to, o){
+  o = o || {};
+  const fmt = o.fmt || (v => nf.format(Math.round(v)));
+  const from = (o.from !== undefined) ? o.from : (parseFloat(el.dataset.cur) || 0);
+  el.dataset.cur = to;
+  cancelAnimationFrame(el._raf);
+  if(RM){ el.textContent = fmt(to); return; }
+  const dur = o.dur || 800, t0 = performance.now();
+  (function step(t){
+    const k = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - k, 3);
+    el.textContent = fmt(from + (to - from) * e);
+    if(k < 1) el._raf = requestAnimationFrame(step);
+  })(t0);
+}
+
+// 실부담금 계산기
+const n = document.getElementById('npeople');
+function calc(){
+  const p = +n.value;
+  document.getElementById('nOut').textContent = p;
+  tween(document.getElementById('cTotal'), p*350000, {fmt: won, dur: 600});
+  tween(document.getElementById('cRefund'), p*332500, {fmt: v => '− 최대 ' + won(v), dur: 600});
+  tween(document.getElementById('cBurden'), p*17500, {fmt: v => won(v) + '부터', dur: 600});
+  const save = Math.max(2000000 - p*17500, 0);
+  tween(document.getElementById('cSave'), Math.round(save/10000), {fmt: v => '약 ' + Math.round(v) + '만 원 이상 절감', dur: 600});
+}
+n.addEventListener('input', calc); calc();
+
+// 지원금 한도 시뮬레이터
+const limInput = document.getElementById('limInput'), limPeople = document.getElementById('limPeople');
+const gFg = document.getElementById('gFg'), CIRC = 2 * Math.PI * 58;
+function sim(){
+  const limit = Math.max(0, parseFloat(limInput.value) || 0) * 10000;
+  const people = +limPeople.value;
+  document.getElementById('limPeopleOut').textContent = people;
+  const rate = document.querySelector('input[name=region]:checked').value === 'cap' ? 0.90 : 0.95;
+  const total = people * 350000, gov = Math.round(total * rate), self = total - gov;
+  const used = limit > 0 ? gov / limit : 0, remain = limit - gov;
+  tween(document.getElementById('sTotal'), total, {fmt: won});
+  tween(document.getElementById('sGov'), gov, {fmt: won});
+  tween(document.getElementById('sSelf'), self, {fmt: won});
+  tween(document.getElementById('sRemain'), Math.max(remain, 0), {fmt: won});
+  tween(document.getElementById('gTxt'), Math.round(used * 100), {fmt: v => Math.round(v) + '%'});
+  gFg.style.strokeDashoffset = CIRC * (1 - Math.min(used, 1));
+  gFg.classList.toggle('over', used > 1);
+  const v = document.getElementById('sVerdict');
+  if(limit <= 0){ v.textContent = '조회한 한도를 입력해 주세요.'; v.className = 'verdict'; }
+  else if(used <= 1){ v.textContent = '입력한 한도 안에서 ' + people + '명 수강이 가능한 것으로 계산됩니다.'; v.className = 'verdict ok'; }
+  else { const mx = Math.floor(limit / (350000 * rate)); v.textContent = '한도를 넘습니다. 이 한도로는 최대 ' + mx + '명까지 계산됩니다. 상담에서 방법을 함께 찾아 드립니다.'; v.className = 'verdict over'; }
+}
+limInput.addEventListener('input', sim); limPeople.addEventListener('input', sim);
+document.querySelectorAll('input[name=region]').forEach(r => r.addEventListener('change', sim));
+document.querySelectorAll('.chips button').forEach(b => b.addEventListener('click', () => { limInput.value = b.dataset.lim; sim(); }));
+gFg.style.strokeDasharray = CIRC; gFg.style.strokeDashoffset = CIRC;
+setTimeout(sim, 100);
+
+// 스크롤 진행 바
+const sbar = document.getElementById('sbar');
+addEventListener('scroll', () => {
+  const d = document.documentElement;
+  sbar.style.width = (scrollY / Math.max(d.scrollHeight - innerHeight, 1) * 100) + '%';
+}, {passive: true});
+
+// 등장 모션 (스크롤)
+const revealSel = 'section h2, section .lead, section .lead2, section .eyebrow, .qcard, .dcard, .mcard, .step, .rcard, .stat, .checkcard, .onlybox, .aibox, .calcbox, .notice, .storyline, .turn, .igcard, .fineprint, details';
+document.querySelectorAll(revealSel).forEach(el => {
+  if(!el.classList.contains('rv')){
+    el.classList.add('rv');
+    const sib = Array.from(el.parentElement.children).indexOf(el);
+    el.style.setProperty('--d', Math.min(sib, 6) * 0.07 + 's');
+  }
+});
+document.querySelectorAll('.scene.bad').forEach(e => e.classList.add('l'));
+document.querySelectorAll('.scene.good').forEach(e => e.classList.add('r'));
+document.querySelectorAll('.stat, .dcard, .qcard, .rcard').forEach(e => e.classList.add('z'));
+function runCount(el){
+  if(el.dataset.done) return; el.dataset.done = 1;
+  tween(el, +el.dataset.count, {from: 0, dur: 1600});
+}
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if(!e.isIntersecting) return;
+  e.target.classList.add('in');
+  e.target.querySelectorAll('[data-count]').forEach(runCount);
+  if(e.target.id === 'lsteps') e.target.classList.add('in');
+  io.unobserve(e.target);
+}), {threshold: 0.15});
+document.querySelectorAll('.faculty').forEach(e=>e.classList.add('rv'));
+document.querySelectorAll('.rv, #lsteps').forEach(el => io.observe(el));
+
+
+// ===== 신청 폼 → 구글 스프레드시트 연동 =====
+// 설정 방법: 함께 제공된 "온세이프티_구글시트_연동스크립트.gs"를 구글 시트의
+// Apps Script에 붙여넣고 웹 앱으로 배포한 뒤, 발급된 URL을 아래에 넣으세요.
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwpgxdw82NXxv4GCr_XQ-XkfawBrqA5vnDipJ66voGm93RUMnZRDvu85OdN3of8Eecd/exec';
+
+// 유입경로(UTM) 자동 수집 — 어느 채널(전단/DM/카카오/검색)에서 온 신청인지 시트에 함께 기록됩니다.
+const utmParams = (() => {
+  const q = new URLSearchParams(location.search);
+  return ['utm_source','utm_medium','utm_campaign'].map(k => q.get(k)).filter(Boolean).join('/') || '직접유입';
+})();
+
+document.getElementById('leadForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  if(!this.checkValidity()){ this.reportValidity(); return; }
+  const btn = this.querySelector('button[type=submit]');
+  btn.disabled = true; btn.textContent = '접수 중...';
+
+  const data = new URLSearchParams({
+    company: document.getElementById('fCompany').value.trim(),
+    name:    document.getElementById('fName').value.trim(),
+    phone:   document.getElementById('fPhone').value.trim(),
+    count:   document.getElementById('fCount').value,
+    mode:    document.getElementById('fMode').value,
+    utm:     utmParams,
+    page:    location.href.split('?')[0],
+    referrer: document.referrer || '',
+    ua:      navigator.userAgent || ''
+  });
+
+  try{
+    if(GOOGLE_SCRIPT_URL.startsWith('https://')){
+      await fetch(GOOGLE_SCRIPT_URL, { method:'POST', mode:'no-cors', body:data });
+    }else{
+      console.warn('[온세이프티] GOOGLE_SCRIPT_URL이 아직 설정되지 않았습니다. 신청 데이터가 저장되지 않습니다.');
+    }
+    document.getElementById('formSuccess').classList.add('show');
+    btn.textContent = '접수 완료';
+  }catch(err){
+    btn.disabled = false; btn.textContent = '환급 대상 확인받기';
+    alert('일시적인 오류로 접수에 실패했습니다. 전화(1600-6223) 또는 카카오톡으로 문의해 주세요.');
+  }
+});
+</script>
+</body>
+</html>
